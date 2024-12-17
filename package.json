@@ -56,7 +56,7 @@
     "test-watch": "yarn test --watch",
     "test-update": "yarn test -u",
     "compile": "yarn run clean && cross-env NODE_ENV=production tsx build.ts && yarn types",
-    "prepare": "yarn compile && husky install",
+    "prepare": "yarn compile",
     "types": "tsc src/index.tsx --jsx react --declaration --esModuleInterop --allowJs --emitDeclarationOnly --outDir lib"
   }
 }
